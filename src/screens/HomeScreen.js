@@ -11,7 +11,8 @@ const HomeScreen = () => {
       <FlatList
         data={products}
         renderItem={({item}) => <ProductItemComponent item={item} />}
-        keyExtractor={({id}) => id}
+        keyExtractor={({id}) => id} // thêm key khi item dữ liệu không có trường id
+        showsVerticalScrollIndicator={false} // trong app hạn chế hiển thị thanh cuộn
       />
     </View>
   );

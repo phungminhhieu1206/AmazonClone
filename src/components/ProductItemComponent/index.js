@@ -20,7 +20,7 @@ const ProductItemComponent = ({item}) => {
         <View style={styles.ratingContainer}>
           {[0, 0, 0, 0, 0].map((el, i) => (
             <Icon
-              key={`${item.id}-${i}`}
+              key={`${item?.id}-${i}`} // item.id là id của item nhưng có 5 dấu sao trong 1 item nên thêm i
               type="FontAwesome"
               style={styles.star}
               size={18}
