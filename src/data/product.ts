@@ -8,9 +8,9 @@ export default {
   - FLOW CROSS-COMPUTER CONTROL: Supports flow cross-computer control across multiple screens. Pair up to 3 devices via Bluetooth Low Energy or Unifying USB receiver`,
   image: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/products/mouse1.jpg',
   images: [
-    'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/products/mouse1.jpg',
-    'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/products/mouse2.jpg',
-    'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/products/mouse3.jpg',
+    {id: '1', url: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/products/mouse1.jpg'},
+    {id: '2', url: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/products/mouse2.jpg'},
+    {id: '3', url: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/products/mouse3.jpg'},
   ],
   options: ['Black', 'Space Grey'],
   avgRating: 4.8,

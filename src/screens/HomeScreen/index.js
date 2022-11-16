@@ -1,8 +1,7 @@
 import React from 'react';
 import {View, StyleSheet, FlatList} from 'react-native';
-import ProductItemComponent from '../components/ProductItemComponent';
-
-import products from '../data/products';
+import ProductItemComponent from '../../components/ProductItemComponent';
+import products from '../../data/products';
 
 const HomeScreen = () => {
   return (
