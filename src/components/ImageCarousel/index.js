@@ -30,13 +30,13 @@ const ImageCarousel = ({images}) => {
           viewAreaCoveragePercentThreshold: 50,
         }}
         onViewableItemsChanged={onFlatlistUpdate} // chuyển button slide
-        keyExtractor={item => item.id}
+        keyExtractor={item => item.id} // quan trọng
       />
 
       <View style={styles.dots}>
         {images.map((item, index) => (
           <View
-            key={index}
+            key={index} // rất quan trọng !
             style={[
               styles.dot,
               {
