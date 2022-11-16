@@ -3,7 +3,10 @@ import {View, StyleSheet, FlatList} from 'react-native';
 import ProductItemComponent from '../../components/ProductItemComponent';
 import products from '../../data/products';
 
-const HomeScreen = () => {
+const HomeScreen = ({searchValue}) => {
+  // TODO: Search liên tục
+  // console.log(searchValue);
+
   return (
     <View style={styles.page}>
       {/* Render product component */}

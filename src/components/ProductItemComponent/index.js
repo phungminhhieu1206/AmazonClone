@@ -1,11 +1,17 @@
-import {View, Text, Image} from 'react-native';
+import {View, Text, Image, Pressable} from 'react-native';
 import React from 'react';
 import styles from './styles';
 import {Icon} from '../common';
+import {useNavigation} from '@react-navigation/native';
 
 const ProductItemComponent = ({item}) => {
+  const navigation = useNavigation();
+
+  const onPress = () => {
+    navigation.navigate('ProductDetails', {id: item.id});
+  };
   return (
-    <View style={styles.root}>
+    <Pressable onPress={onPress} style={styles.root}>
       <Image
         style={styles.image}
         source={{
@@ -35,7 +41,7 @@ const ProductItemComponent = ({item}) => {
           {item?.oldPrice && <Text style={styles.oldPrice}>${item.oldPrice}</Text>}
         </View>
       </View>
-    </View>
+    </Pressable>
   );
 };
 

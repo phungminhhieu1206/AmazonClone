@@ -1,5 +1,5 @@
 /* eslint-disable react-native/no-inline-styles */
-import {View, Text, ScrollView} from 'react-native';
+import {Text, ScrollView} from 'react-native';
 import React, {useState} from 'react';
 import styles from './styles';
 import product from '../../data/product';
@@ -7,10 +7,14 @@ import ImageCarousel from '../../components/ImageCarousel';
 import {Picker} from '@react-native-picker/picker';
 import QuantitySelector from '../../components/QuantitySelector';
 import ButtonCustom from '../../components/ButtonCustom';
+import {useRoute} from '@react-navigation/native';
 
 const ProductScreen = () => {
   const [selectedOption, setSelectedOption] = useState(product.options ? product.options[0] : null);
-  const [quantity, setQuantity] = useState(1);
+  const [quantity, setQuantity] = useState(0);
+
+  const route = useRoute();
+  console.log(route.params);
 
   return (
     <ScrollView style={styles.root}>

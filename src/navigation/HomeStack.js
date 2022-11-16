@@ -45,5 +45,8 @@ const HomeStack = () => {
     </Stack.Navigator>
   );
 };
+/**
+ * Cài đặt search liên tục trên header khi có input trên thanh search
+ */
 
 export default HomeStack;
